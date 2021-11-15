@@ -1,0 +1,247 @@
+main {
+    display: flex;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+.containerLeft {
+    // border: $testBorder;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/images/background_image.png'), linear-gradient(180deg, #7d27b6 , #385fd4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+}
+
+                                //
+                                // Container Top Left
+                                //
+
+.containerLeftTop {
+    width: 100%;
+    height: 60%;
+    // border: $testBorder2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.containerLeftTop p, .containerLeftTop .links {
+    margin-top: $leftTopMargin;
+}
+
+h1 {
+    font-size: $fontM;
+    font-weight: normal;
+    margin-top: 3%;
+}
+
+.containerLeftTop p {
+    font-size: calc(#{$fontS} + 4px);
+    font-weight:300;
+    width: 40%;
+    text-align: center;
+}
+
+.containerLeftTop .links {
+    display: flex;
+    width: 60%;
+    height: 10%;
+    justify-content: space-evenly;
+    align-items: center;
+    // border: $testBorder;
+    font-size: $fontS
+
+}
+
+.containerLeftTop a {
+    display: flex;
+    height: 46px;
+    padding: 10px 30px;
+    border-radius: 40px;
+    border: $buttonBorder solid 2px;
+}
+
+#googlePlay {
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+                                //
+                                // Container Left Bottom
+                                //
+
+.containerLeftBottom {
+    @extend .containerLeftTop;
+    height: 40%;
+    font-size: $fontM;
+    font-weight: lighter;
+
+}
+.containerLeftBottom * {
+    margin-bottom: 5%;
+}
+
+.containerLeftBottom .icons{
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    // border: $testBorder;
+    align-items: flex-end;
+
+    a {
+        box-sizing: border-box;
+        height: 60px;
+        width: 60px;
+        margin: 0;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #B5B6E4;
+        color: rgb(0, 0, 0);
+        mix-blend-mode: screen;
+        
+    }
+}
+
+h6 {
+    font-weight: 300;
+}
+
+
+                                //
+                                // Container Right Start
+                                //
+
+.containerRight {
+    display: flex;
+    flex-direction: column;
+    // border: $testBorder;
+    height: 100%;
+    width: 60%;
+}
+
+.containerSignUp {
+    display: flex;
+    // border: $testBorder;
+    height: 15%;
+    align-items: center;
+    font-size: calc(#{$fontS} + 4px);
+    justify-content: flex-end;
+
+    button {
+        border: solid 2px lightgray ;
+        height: 50px;
+        padding: 0 50px;
+        border-radius: 25px;
+        text-transform: uppercase;
+        margin: 0 2%;
+        background-image: linear-gradient(90deg, #ffffff8a 51%, #a3a3a38a 60%);
+        background-size: 250% auto;
+        transition: 0.5s;
+    }
+}
+
+h4 {
+    font-weight: 400;
+}
+
+                                //
+                                // Container Right Sign in (Title & Input)
+                                //
+
+
+.containerSignIn {
+    display: flex;
+    flex-direction: column;
+    // border: $testBorder;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+
+    input {
+        // background-image: url('../assets/svgs/avatar.svg');
+        background-size: 30px;
+        background-position-y: center;
+        background-position-x: 3%;
+        background-repeat: no-repeat;
+        background-color: white;
+        height: 50px;
+        padding: 0 50px;
+        border: none;
+        border-bottom: solid 2px gray;
+        margin-top: 2%;
+        font-size: calc(#{$fontM} - 6px);
+        transition: 0.5s;
+
+        
+    }
+    input[type=text] {
+        background-image: url('../assets/svgs/avatar.svg');
+    }
+    input[type=password] {
+        background-image: url('../assets/svgs/password.svg');
+        background-size: 22px;
+        background-position-x: 5%;
+    }
+}
+
+input:focus {
+    outline: none;
+    background-color: rgb(240, 240, 240);
+}
+
+h3 {
+    margin-bottom: 3%;
+    font-size: calc(#{$fontL} + 4px);
+    font-weight: 400;
+    
+}
+
+
+                                //
+                                // Continer Right Sign in Button
+                                //
+
+
+.containerRight .buttonSignIn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    // border: $testBorder2;
+}
+
+.buttonSignIn button {
+    transition: 0.5s;
+    width: 25%;
+    height: 64px;
+    border-radius: 32px;
+    border: none;
+    background-image: linear-gradient(90deg, #7d27b68a 0%, #385fd48a 51%, #124cf88a 100%);
+    background-size: 200% auto;
+    text-transform: uppercase;
+    color: white;
+    font-size: calc(#{$fontM} - 8px);
+    text-align: center;
+    
+}
+
+button:hover {
+    cursor: pointer;
+    background-position: right center;
+}

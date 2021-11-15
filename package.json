@@ -1,0 +1,16 @@
+{
+  "name": "package",
+  "version": "0.0.1",
+  "description": "package for Motion website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass --watch ./sass/mainfeed.scss -o css",
+    "sassfeed": "node-sass --watch ./sass/mainfeed.scss -o css"
+  },
+  "author": "Patrick",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
